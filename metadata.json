@@ -1,0 +1,6 @@
+{
+  "name": "Mysa Coffee House | Bandra West, Mumbai",
+  "description": "Flagship editorial café experience in Bandra West, Mumbai. Specialty coffee, all-day brunch, and house-made desserts crafted for slow mornings and good conversations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

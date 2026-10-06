@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --color-warm-bg: #FAF8F5;
+  --color-warm-surface: #F3EFEA;
+  --color-warm-border: #E8E2D9;
+  --color-coffee-dark: #191614;
+  --color-coffee-deep: #1C1815;
+  --color-coffee-accent: #B07D48;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #FAF8F5;
+    color: #191614;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: var(--font-serif);
+    letter-spacing: -0.015em;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Subtle architectural grain lines */
+.bg-grain {
+  background-image: radial-gradient(rgba(25, 22, 20, 0.05) 1px, transparent 0);
+  background-size: 24px 24px;
+}
